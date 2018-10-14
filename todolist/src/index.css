@@ -1,0 +1,38 @@
+body {
+  padding: 10px;
+  /*background-color: #ffecb3;*/
+  font-family: sans-serif;
+}
+#container {
+  /*display: flex;*/
+  /*justify-content: center;*/
+ text-align: center;
+ background-color: #ffecb3;
+
+
+}
+
+li.checked::before {
+  content: '';
+  position: absolute;
+  border-color: #fff;
+  border-style: solid;
+  border-width: 0 2px 2px 0;
+  top: 10px;
+  left: 16px;
+  transform: rotate(45deg);
+  height: 15px;
+  width: 7px;
+}
+
+li.checked {
+  background: #f4b042;
+  background-color: #f4b042;
+  color: #fff;
+  text-decoration: line-through;
+
+}
+
+li:hover {
+  background: #ddd;
+}

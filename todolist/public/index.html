@@ -1,0 +1,20 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <title>Todo List</title>
+  </head>
+  <body>
+
+    <div id="container">
+  
+    </div>
+    <script>
+    	var list = document.querySelector('div');
+list.addEventListener('click', function(ev) {
+  if (ev.target.tagName === 'LI') {
+    ev.target.classList.toggle('checked');
+  }
+}, false);
+    </script>
+  </body>
+</html>
